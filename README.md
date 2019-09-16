@@ -1,38 +1,6 @@
-Peanuts V2.0                                   
+Hexnuts V1.0 (modified version of Peanuts by Noobiedog)                                  
                                     
 ========
-
-Release Date: 02/12/2018
-
-Peanuts is a free and open source wifi tracking tool. Based on the SensePosts Snoopy-NG project that is now closed.<br />
-
-Less dependencies, less overhead, less complications<br />
-
-This tool is featured in the film "All the devils men", Directed by Matthew Hope
-
-	https://www.imdb.com/title/tt6012244/
-
-NOTE: Im not sure how long i will supprot this project as its a slowly dying method, if i get time to work on it i will :D<br />
-
-Changelog:
-
-    # [DONE] - Added BT support.
-    # [DONE] - Added Quiet Mode
-    # [DONE] - Add COLOR.
-    # [DONE] - Kill threads on Ctrl+C.
-    # [DONE] - Defaults added to Arguments.
-    # [DONE] - GPS added
-    # [DONE] - Output CSV Tidy
-    # [DONE] - Added Json Output to endpoint
-
-TODO:
-
-	# Alert on known SSID or MAC
-	# Better error correction on GPS exits or false connections
-	# Add Pause/Stop/Start functions to script.
-	# Live mapping in time
-	# silent mode
-	# Port to ESP32
 
 **** FOR EDUCATIONAL USE! Use at your own risk. **** <br />
 
@@ -46,20 +14,12 @@ TODO:
 
 - Python 2.7+
 - Scapy / python-gps / python-bluez
-
-#### Installing from Source
- 
-```bash
-git clone https://github.com/noobiedog/peanuts/
-cd peanuts
-pip install -r requirements.txt
-apt-get install python-gps bluetooth bluez python-bluez
-```
+- aircrack-ng
 
 #### Installing from Download
 
 ```bash
-pip install argparse datetime gps scapy logging
+pip install argparse datetime gps scapy logging requests
 apt-get install python-gps bluetooth bluez python-bluez
 ```
 
@@ -84,7 +44,7 @@ python peanuts.py -i wlan0 -l Home -o Capture1.csv
 #### Advanced
 
 ``` bash
-python peanuts.py -i wlan0mon -l target1 -o unknown.csv -a true -m http://localhost:8080/api/data -g true
+python hexnuts.py -i wlan0mon -l target1 -o unknown.csv -a true -m http://localhost:8080/api/data -g true
 
 ```
 
