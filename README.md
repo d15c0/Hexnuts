@@ -19,8 +19,8 @@ Hexnuts V1.0 (modified version of Peanuts by Noobiedog)
 #### Installing from Download
 
 ```bash
-pip install argparse datetime gps scapy logging requests
-apt-get install python-gps bluetooth bluez python-bluez
+sudo apt-get install python-gps bluetooth bluez python-bluez
+sudo pip install argparse datetime gps scapy logging requests
 ```
 
 #### To start GPS in kali/Ubuntu (in a separate terminal window)
